@@ -1,0 +1,10 @@
+:root { --bg:#0f1724; --card:#0b1220; --accent:#8ab4f8; --muted:#9aa7bd; color-scheme: dark; }
+* { box-sizing:border-box; }
+html,body { height:100%; margin:0; font-family:system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; background:linear-gradient(180deg,#071026,var(--bg)); color: #e6eef8; }
+.site-header { padding:4rem 1.25rem; text-align:center; }
+.site-header h1 { margin:0 0 .5rem; font-size:2rem; letter-spacing:-0.5px; }
+.tagline { margin:0; color:var(--muted); }
+.content { max-width:900px; margin:2rem auto; padding:1rem; }
+section { background:rgba(255,255,255,0.02); border-radius:12px; padding:1rem; margin-bottom:1rem; box-shadow:0 6px 18px rgba(2,6,23,0.6); }
+a { color:var(--accent); text-decoration:none; }
+.site-footer { text-align:center; padding:2rem 1rem 3rem; color:var(--muted); font-size:.9rem; }
