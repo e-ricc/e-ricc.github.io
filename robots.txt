@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://e-ricc.github.io/sitemap.xml
