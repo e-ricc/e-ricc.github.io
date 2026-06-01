@@ -104,7 +104,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: # blog_name will be displayed in your blog page
-blog_description: 
+blog_description:
 permalink:
 
 # Pagination
@@ -268,8 +268,8 @@ jekyll-archives:
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: 
-  first_name: 
+  last_name:
+  first_name:
 
   style: modern-language-association
   locale: en

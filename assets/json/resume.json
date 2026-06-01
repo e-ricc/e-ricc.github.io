@@ -31,12 +31,7 @@
       "startDate": "2022-09-01",
       "endDate": "2024-10-18",
       "score": "110/110 cum laude",
-      "courses": [
-        "Graphical Models and Network Science",
-        "Bayesian Statistics",
-        "Programming for Data Science",
-        "Numerical Analysis"
-      ]
+      "courses": ["Graphical Models and Network Science", "Bayesian Statistics", "Programming for Data Science", "Numerical Analysis"]
     },
     {
       "institution": "University of Trento, Italy",
@@ -47,12 +42,7 @@
       "startDate": "2019-09-01",
       "endDate": "2022-09-22",
       "score": "108/110",
-      "courses": [
-        "Calculus",
-        "Geometry",
-        "Algebra",
-        "Probability and Statistics"
-      ]
+      "courses": ["Calculus", "Geometry", "Algebra", "Probability and Statistics"]
     }
   ],
   "awards": [],
