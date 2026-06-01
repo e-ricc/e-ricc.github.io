@@ -2,10 +2,10 @@
   "basics": {
     "name": "Ester Riccardi",
     "label": "PhD student in Computational Neuroscience",
-    "image": "",
+    "image": "assets/img/your-profile-photo.jpg",
     "email": "ester.riccardi@unitn.it",
-    "url": "",
-    "summary": "",
+    "url": "https://your-website.example.com",
+    "summary": "Write a 2-3 line professional summary here.",
     "profiles": []
   },
   "work": [],
