@@ -1,12 +1,11 @@
 cv:
   # Personal header
-  name: Your Full Name
-  label: Your Role or Title
-  email: your.email@example.com
-  location: City, Country
-  image: "" # Optional: filename in assets/img/
-  summary: Short professional summary (2-3 lines)
-
+  name: Ester Riccardi
+  label: PhD student in Computational Neuroscience
+  email: ester.riccardi@unitn.it
+  location: Trento, Italy
+  image: "assets/img/prof_pic.jpg" # Optional: filename in assets/img/
+  summary: Write a 2-3 line professional summary here.
   # Social links used by CV page
   social_networks:
     - network: GitHub
@@ -26,7 +25,7 @@ cv:
     Education:
       - institution: Your University
         location: City, Country
-        url: https://example.edu
+        url: 
         area: Your Field
         studyType: Degree Type
         start_date: 2020
@@ -54,7 +53,7 @@ cv:
           - Coauthor Name
         publisher: Venue / Journal / Conference
         releaseDate: 2025-01-01
-        url: https://example.com/paper
+        url: 
         summary: One-line summary of contribution.
 
     Skills:
