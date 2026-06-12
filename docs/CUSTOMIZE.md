@@ -377,7 +377,7 @@ Set the `cv_pdf` variable in the frontmatter of [`_pages/cv.md`](../_pages/cv.md
 ```yaml
 ---
 layout: cv
-cv_pdf: /assets/rendercv/rendercv_output/CV.pdf
+cv_pdf: /assets/rendercv/rendercv_output/cv.pdf
 cv_format: rendercv
 ---
 ```

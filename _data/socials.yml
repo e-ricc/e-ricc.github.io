@@ -1,8 +1,8 @@
 # Social/contact links shown on the site.
 # Fill what you use, remove what you don't.
 
-cv_pdf: /assets/pdf/your_cv.pdf # Put your CV PDF at this path.
-email: your.email@example.com # Main contact email.
+cv_pdf: /assets/pdf/cv.pdf # Put your CV PDF at this path.
+email: ester.riccardi@unitn.it # Main contact email.
 rss_icon: true # Set false (or remove) to hide RSS icon.
 
 # Examples (uncomment and fill if needed):
