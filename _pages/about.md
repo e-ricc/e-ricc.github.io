@@ -5,7 +5,7 @@ permalink: /
 subtitle: PhD student in Computational Neuroscience @ CIMeC (University of Trento)
 
 profile:
-  align: right
+  align: top right
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   # more_info: >
@@ -29,7 +29,7 @@ latest_posts:
 
 Hello! I am Ester Riccardi and I am a PhD student in Computational Neuroscience and Generative AI at [CIMeC](https://www.cimec.unitn.it/en) ([University of Trento](https://www.unitn.it/en), Italy), where I am supervised by Prof. [Roberto Bottini](http://www.bottinilab.com/) and Prof. [Paolo Rota](https://paolorota.eu/).
 
-My research focues on 🧠 brain-to-image 🌅 decoding: reconstructing visual experience, mental imagery and dreams from brain activity using generative models. 
+My research focuses on 🧠 brain-to-image 🌅 decoding: reconstructing visual experience, mental imagery and dreams from brain activity using generative models. 
 
 Outside academia, I enjoy (trail) running, playing board and video games, reading and watching sport.
 
