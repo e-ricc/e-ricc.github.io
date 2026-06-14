@@ -1,0 +1,12 @@
+# al-folio Local Overrides
+# This file documents intentional local customizations that override plugin-owned files.
+# See: https://github.com/al-org-dev/al-folio/blob/main/docs/FAQ.md#do-i-need-to-fork-every-v1-gem-to-customize-layouts-and-liquid-files
+
+overrides:
+  - path: _sass/main.scss
+    gem: al_folio_core
+    reason: |
+      Local navigation styling to constrain the navbar menu within the page's max-width
+      and keep it right-aligned at the top of the page without extending beyond the container.
+    version: "1.0.9"
+    reviewed_at: "2026-06-14"
