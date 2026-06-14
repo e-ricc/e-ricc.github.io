@@ -28,7 +28,3 @@ latest_posts:
 ---
 
 Hello! I am Ester Riccardi and I am a PhD student in Computational Neuroscience and Generative AI at [CIMeC](https://www.cimec.unitn.it/en) ([University of Trento](), Italy), where I am supervised by Prof. [Roberto Bottini](http://www.bottinilab.com/) and Prof. [Paolo Rota](https://paolorota.eu/).
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
