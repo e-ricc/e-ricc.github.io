@@ -7,11 +7,6 @@ email: ester.riccardi@unitn.it # Main contact email.
 
 # Examples (uncomment and fill if needed):
 # github_username: your-github
-linkedin_username: www.linkedin.com/in/ester-riccardi-a5b68a2a4
-scholar_userid: https://scholar.google.com/citations?user=ezEpag0AAAAJ
+linkedin_username: ester-riccardi
+scholar_userid: ezEpag0AAAAJ
 # orcid_id: 0000-0000-0000-0000
-
-custom_social:
-  # logo: /assets/img/custom-social-logo.png # Optional: local image path.
-  title: Personal Website
-  url: https://e-ricc.github.io/
