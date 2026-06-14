@@ -3,15 +3,15 @@
 
 cv_pdf: /assets/pdf/cv.pdf # Put your CV PDF at this path.
 email: ester.riccardi@unitn.it # Main contact email.
-rss_icon: true # Set false (or remove) to hide RSS icon.
+# rss_icon: true # Set false (or remove) to hide RSS icon.
 
 # Examples (uncomment and fill if needed):
 # github_username: your-github
-# linkedin_username: your-linkedin
-# scholar_userid: your_google_scholar_id
+linkedin_username: www.linkedin.com/in/ester-riccardi-a5b68a2a4
+scholar_userid: https://scholar.google.com/citations?user=ezEpag0AAAAJ
 # orcid_id: 0000-0000-0000-0000
 
 custom_social:
-  logo: /assets/img/custom-social-logo.png # Optional: local image path.
+  # logo: /assets/img/custom-social-logo.png # Optional: local image path.
   title: Personal Website
-  url: https://your-domain.com/
+  url: https://e-ricc.github.io/
