@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Next month I'll be in Sicily for (ICVSS)[https://icvss.dmi.unict.it/icvss2026/] (International Computer Vision Summer School). See you there! 🌊
+Next month I'll be in Sicily for [ICVSS](https://icvss.dmi.unict.it/icvss2026/) (International Computer Vision Summer School). See you there! 🌊
