@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Doctoral Student Day! Great occasion to connect with other CIMeC PhD students, discuss and share research ideas. 
+Doctoral Student Day! ✨ Great occasion to connect with other CIMeC PhD students, discuss and share research ideas. 
