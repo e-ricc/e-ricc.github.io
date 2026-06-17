@@ -1,4 +1,7 @@
-# Optional bibliography source used by some templates.
-# Add your own entries here if you want data-driven citations.
-# You can also keep this file empty.
-[]
+metadata:
+  last_updated: '2026-06-17'
+papers:
+  ezEpag0AAAAJ:u-x6o8ySG0sC:
+    citations: 2
+    title: Causal drivers of dynamic networks
+    year: '2025'
