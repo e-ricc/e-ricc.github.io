@@ -423,3 +423,31 @@ html[data-theme="dark"] {
     color: var(--cv-badge-text) !important;
   }
 }
+
+/*******************************************************************************
+ * Profile photo in the left sidebar (wide screens); hidden in the home intro
+ ******************************************************************************/
+#navbar .nav-photo {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #navbar .nav-photo {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 0.25rem;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  // The photo now lives in the sidebar, so the home intro uses the full width.
+  .post article > .profile {
+    display: none;
+  }
+}

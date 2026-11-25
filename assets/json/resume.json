@@ -23,11 +23,11 @@
   "work": [
     {
       "name": "University of Trento",
-      "position": "Tutor",
+      "position": "Teaching assistant",
       "location": "Rovereto, Italy",
       "startDate": "2026-09",
-      "endDate": "2026-10",
-      "summary": "Tutor for \"Introduction to programming (Python)\" course"
+      "endDate": "2026-12",
+      "summary": "Introduction to Computer Programming (Python). Instructor: Paolo Rota"
     },
     {
       "name": "ISIS \"O. Romero\" high school",
@@ -42,7 +42,7 @@
       "location": "Trento, Italy",
       "startDate": "2022-09",
       "endDate": "2023-12",
-      "summary": "Several experiences as university tutor."
+      "summary": "Several experiences as university tutor"
     }
   ],
   "education": [
@@ -84,16 +84,6 @@
         "Supervisor: Veronica Vinciotti (University of Trento)",
         "Final mark: 108/110"
       ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "Italian",
-      "fluency": "Native"
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent"
     }
   ]
 }
