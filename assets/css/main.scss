@@ -85,3 +85,101 @@ html[data-theme="dark"] {
   padding-top: 1rem;
   margin-top: 1rem;
 }
+
+/*******************************************************************************
+ * Home page polish
+ ******************************************************************************/
+// Softer shadow on the profile photo.
+.profile img.z-depth-1 {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12) !important;
+}
+
+// Bold rainbow-gradient text (used for "brain-to-image" in the intro).
+.rainbow-text {
+  font-weight: 700;
+  background-image: linear-gradient(90deg, #d7263d, #f08a24, #d9a400, #228833, #1f6fd1, #7b3fb5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+// Smaller, quieter social icons: grey, green on hover.
+.social .contact-icons {
+  font-size: 2rem;
+
+  a {
+    margin: 0 0.35rem;
+  }
+
+  a i::before {
+    color: var(--global-text-color-light) !important;
+  }
+
+  a:hover i::before {
+    color: var(--global-theme-color) !important;
+  }
+
+  a svg,
+  a svg image,
+  a img {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+/*******************************************************************************
+ * Publications
+ ******************************************************************************/
+// Previews may be transparent figures: give them a white backing so axes stay
+// readable in dark mode.
+.publications ol.bibliography li .preview {
+  background-color: #ffffff;
+}
+
+/*******************************************************************************
+ * CV page
+ ******************************************************************************/
+.cv {
+  // Flat sections instead of shadowed boxes.
+  .card {
+    box-shadow: none !important;
+    border: none !important;
+    border-top: 1px solid var(--global-divider-color) !important;
+    border-radius: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  // Section titles smaller than the page title.
+  .card .card-title {
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: var(--global-theme-color);
+    margin-bottom: 0.75rem;
+  }
+
+  // Hide the stray default list bullets next to the date badges.
+  .list-group {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .list-group-item {
+    border: none !important;
+  }
+
+  // Remove the thin table rules above/below the date badges.
+  table.table-cv,
+  table.table-cv tbody,
+  table.table-cv tr,
+  table.table-cv td {
+    border: none !important;
+  }
+}
+
+// Smaller PDF download icon in the CV title.
+.post-header .post-title .fa-file-pdf {
+  font-size: 1.75rem;
+}
