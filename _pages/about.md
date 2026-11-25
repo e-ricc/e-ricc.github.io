@@ -27,8 +27,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-<hr/>
-
 Hello there! 🙋‍♀️
 
 I am Ester Riccardi and I am a PhD student in Computational Neuroscience and Generative AI at [CIMeC](https://www.cimec.unitn.it/en) ([University of Trento](https://www.unitn.it/en), Italy), where I am supervised by Prof. [Roberto Bottini](http://www.bottinilab.com/) and Prof. [Paolo Rota](https://paolorota.eu/).
@@ -38,5 +36,3 @@ My research focuses on 🧠 brain-to-image 🌅 decoding: reconstructing visual 
 Previously, I got both my B.Sc. and M.Sc. in Mathematics at the University of Trento, mainly studying Statistics, Network Science and Graphical Models.
 
 Outside academia, I enjoy (trail) running, playing board and video games, reading and watching sport.
-
-<hr/>

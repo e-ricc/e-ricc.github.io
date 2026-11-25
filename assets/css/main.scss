@@ -51,3 +51,37 @@ html[data-theme="dark"] {
   --global-theme-color: #{$accent-green-tint-30};
   --global-hover-color: #{$accent-green-tint-30};
 }
+
+/*******************************************************************************
+ * About page: profile photo in its own column (text never wraps under it)
+ ******************************************************************************/
+.post article > .profile + .clearfix {
+  > :first-child {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  // Establish a block formatting context so the intro text forms a column
+  // beside the floated photo instead of flowing underneath it.
+  .post article > .profile + .clearfix {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 575.98px) {
+  // On phones, keep the photo small and centred above the text.
+  .post article > .profile {
+    float: none !important;
+    width: 180px;
+    margin: 0 auto 1rem;
+  }
+}
+
+// Full-width divider between the intro block and the sections below.
+.post article > .profile + .clearfix + h2 {
+  clear: both;
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
