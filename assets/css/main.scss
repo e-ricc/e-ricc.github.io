@@ -97,7 +97,10 @@ html[data-theme="dark"] {
 // Bold rainbow-gradient text (used for "brain-to-image" in the intro).
 .rainbow-text {
   font-weight: 700;
-  background-image: linear-gradient(90deg, #d7263d, #f08a24, #d9a400, #228833, #1f6fd1, #7b3fb5);
+  background-image: linear-gradient(90deg, #d7263d, #f08a24, #d9a400, #228833, #1f6fd1, #7b3fb5, #d7263d);
+  background-size: 200% 100%;
+  background-repeat: repeat-x;
+  animation: rainbow-shift 6s linear infinite;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -297,5 +300,124 @@ $sidebar-width: 190px;
 
   #navbar .nav-toc .toc-link {
     font-size: 0.85rem;
+  }
+}
+
+@keyframes rainbow-shift {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: -200% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rainbow-text {
+    animation: none;
+  }
+}
+
+/*******************************************************************************
+ * Typography: Montserrat everywhere
+ ******************************************************************************/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar,
+button,
+input,
+select,
+textarea {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*******************************************************************************
+ * CV page: aligned date column and softer green
+ ******************************************************************************/
+:root {
+  --cv-badge-bg: #{color.mix($accent-green, #ffffff, 14%)};
+  --cv-badge-text: #{color.mix($accent-green, #000000, 80%)};
+}
+
+html[data-theme="dark"] {
+  --cv-badge-bg: #{rgba($accent-green, 0.3)};
+  --cv-badge-text: #{$accent-green-tint-30};
+}
+
+.cv {
+  // Section titles in the normal text colour, with a small green accent bar.
+  .card .card-title {
+    color: var(--global-text-color);
+    font-weight: 600;
+    border-left: 3px solid var(--global-theme-color);
+    padding-left: 0.6rem;
+  }
+
+  .list-group-item > .row {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+
+  // Fixed-width date column so every badge and location lines up.
+  .date-column {
+    flex: 0 0 8.5rem;
+    width: 8.5rem;
+    max-width: 8.5rem;
+    transform: none;
+    text-align: left !important;
+    padding-left: 0;
+    padding-right: 0;
+
+    .table-cv {
+      width: 100%;
+    }
+
+    .badge {
+      display: block;
+      width: 100%;
+      min-width: 0 !important;
+      text-align: center;
+      padding: 0.3em 0.4em;
+      font-weight: 600 !important;
+    }
+
+    p.location {
+      margin: 0.35rem 0 0;
+      color: var(--global-text-color-light);
+    }
+
+    i.iconlocation {
+      color: var(--global-text-color-light);
+    }
+  }
+
+  // Entry details take the remaining width, starting at the same x for all.
+  .list-group-item > .row > div:not(.date-column) {
+    flex: 1 1 0;
+    max-width: none;
+    width: auto;
+    margin-top: 0 !important;
+    padding-left: 1.25rem;
+
+    // Titles keep the theme's ml-1 / ml-md-4 indent (0.25rem / 1.5rem);
+    // indent the bullet lists the same way so everything starts at one edge.
+    ul.items {
+      margin-left: 0.25rem !important;
+      padding-left: 1.1rem !important;
+
+      @media (min-width: 768px) {
+        margin-left: 1.5rem !important;
+      }
+    }
+  }
+
+  .card .list-group-item .badge {
+    background-color: var(--cv-badge-bg) !important;
+    color: var(--cv-badge-text) !important;
   }
 }
