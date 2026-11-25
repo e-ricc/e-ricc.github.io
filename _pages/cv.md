@@ -7,6 +7,5 @@ nav_order: 5
 cv_pdf: /assets/pdf/cv.pdf
 cv_format:
 description:
-toc:
-  sidebar: left
+nav_toc: true # show the section list under 'cv' in the left menu
 ---

@@ -274,3 +274,28 @@ $sidebar-width: 190px;
     max-width: 180px;
   }
 }
+
+/*******************************************************************************
+ * Section list of the current page under its menu entry (CV page)
+ ******************************************************************************/
+#navbar .nav-toc {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #navbar .nav-toc {
+    display: block;
+    position: static;
+    visibility: visible;
+    height: auto;
+    margin: 0.1rem 0 0.4rem;
+  }
+
+  #navbar .nav-toc > .toc-list {
+    padding-left: 0.5rem;
+  }
+
+  #navbar .nav-toc .toc-link {
+    font-size: 0.85rem;
+  }
+}
