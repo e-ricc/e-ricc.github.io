@@ -1,0 +1,53 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+@use "sass:color";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/*******************************************************************************
+ * Site accent color (local override of the al_folio_core theme colors)
+ * Green rgb(34, 136, 51); dark mode uses a 30% lighter tint for contrast.
+ ******************************************************************************/
+
+$accent-green: rgb(34, 136, 51);
+$accent-green-tint-30: color.mix(#ffffff, $accent-green, 30%);
+
+:root {
+  --global-theme-color: #{$accent-green};
+  --global-hover-color: #{$accent-green};
+  --global-code-bg-color: #{rgba($accent-green, 0.05)};
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #{$accent-green-tint-30};
+  --global-hover-color: #{$accent-green-tint-30};
+}
