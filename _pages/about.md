@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD student in Computational Neuroscience @ CIMeC (University of Trento)
+subtitle: PhD student in Cognitive and Brain Sciences @ UniTN
 
 profile:
   align: right
@@ -29,7 +29,7 @@ latest_posts:
 
 Hello there! 🙋‍♀️
 
-I'm a PhD student in Computational Neuroscience and Generative AI at [CIMeC](https://www.cimec.unitn.it/en) ([University of Trento](https://www.unitn.it/en), Italy), supervised by Prof. [Roberto Bottini](http://www.bottinilab.com/) and Prof. [Paolo Rota](https://paolorota.eu/).
+I'm a PhD student in Computational Neuroscience and Generative AI at the [Department of Psychology and Cognitive Science](https://www.cogsci.unitn.it/) ([University of Trento](https://www.unitn.it/en), Italy), supervised by Prof. [Roberto Bottini](http://www.bottinilab.com/) and Prof. [Paolo Rota](https://paolorota.eu/).
 
 My research focuses on <strong class="rainbow-text">brain-to-image</strong> decoding: reconstructing visual experience, mental imagery and dreams from brain activity using generative models.
 
