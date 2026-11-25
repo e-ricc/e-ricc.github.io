@@ -183,3 +183,94 @@ html[data-theme="dark"] {
 .post-header .post-title .fa-file-pdf {
   font-size: 1.75rem;
 }
+
+/*******************************************************************************
+ * Navigation: links always on the left; fixed vertical sidebar on wider screens
+ ******************************************************************************/
+$sidebar-width: 190px;
+
+// No name in the menu: "about" is the link back to the home page.
+#navbar .navbar-brand.title {
+  display: none;
+}
+
+// Narrow screens (top bar): keep links and the menu button on the left.
+#navbar .navbar-toggler-main {
+  margin-left: 0 !important;
+}
+
+#navbar .navbar-collapse-main {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+#navbar .navbar-menu-list {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  body.fixed-top-nav {
+    padding-top: 0;
+    padding-left: $sidebar-width;
+  }
+
+  #navbar.fixed-top {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    width: $sidebar-width;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 3.4rem 1.75rem 2rem;
+    border-bottom: none;
+    border-right: 1px solid var(--global-divider-color);
+    opacity: 1;
+  }
+
+  #navbar > .container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #navbar .navbar-collapse-main {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  #navbar .navbar-menu-list {
+    flex-direction: column !important;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  #navbar .navbar-nav .nav-item .nav-link {
+    padding: 0.35rem 0 !important;
+    font-size: 1.05rem !important;
+    font-weight: 400 !important;
+  }
+
+  #navbar .navbar-nav .nav-item.active > .nav-link {
+    font-weight: 500 !important;
+  }
+
+  #navbar #light-toggle {
+    transform: none;
+    margin-top: 1rem;
+    justify-content: flex-start;
+    width: auto;
+  }
+}
+
+// Keep publication previews small on phones (the theme stretches them full width).
+@media (max-width: 575.98px) {
+  .publications ol.bibliography li .preview {
+    max-width: 180px;
+  }
+}
