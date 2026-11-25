@@ -22,6 +22,14 @@
   },
   "work": [
     {
+      "name": "University of Trento",
+      "position": "Tutor",
+      "location": "Rovereto, Italy",
+      "startDate": "2026-10",
+      "endDate": "2026-09",
+      "summary": "Tutor for \"Introduction to programming (Python)\" course"
+    },
+    {
       "name": "ISIS \"O. Romero\" high school",
       "position": "Mathematics teacher",
       "location": "Bergamo, Italy",
@@ -30,24 +38,16 @@
     },
     {
       "name": "University of Trento",
-      "position": "Personal tutor",
-      "location": "Trento, Italy",
-      "startDate": "2023-01",
-      "endDate": "2023-10",
-      "summary": "Tutor for a student with special educational needs during the writing of his master thesis in mathematics."
-    },
-    {
-      "name": "University of Trento",
-      "position": "Tutor of Calculus II",
+      "position": "Tutor",
       "location": "Trento, Italy",
       "startDate": "2022-09",
       "endDate": "2023-12",
-      "summary": "Fall semesters 2022 and 2023."
+      "summary": "Several experiences as university tutor."
     }
   ],
   "education": [
     {
-      "institution": "CIMeC - Center for Mind/Brain Sciences, University of Trento",
+      "institution": "DipSCo - University of Trento",
       "location": "Trento, Italy",
       "area": "Cognitive and Brain Sciences",
       "studyType": "PhD",
