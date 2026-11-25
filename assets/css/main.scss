@@ -78,12 +78,14 @@ html[data-theme="dark"] {
   }
 }
 
-// Full-width divider between the intro block and the sections below.
-.post article > .profile + .clearfix + h2 {
+// Full-width grey divider between the home page sections
+// (intro | news | selected publications | contact icons).
+.post article > .profile ~ h2,
+.post article > .profile ~ .social {
   clear: both;
   border-top: 1px solid var(--global-divider-color);
   padding-top: 1rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 /*******************************************************************************
