@@ -367,9 +367,9 @@ html[data-theme="dark"] {
 
   // Fixed-width date column so every badge and location lines up.
   .date-column {
-    flex: 0 0 8.5rem;
-    width: 8.5rem;
-    max-width: 8.5rem;
+    flex: 0 0 10.5rem;
+    width: 10.5rem;
+    max-width: 10.5rem;
     transform: none;
     text-align: left !important;
     padding-left: 0;
@@ -386,6 +386,8 @@ html[data-theme="dark"] {
       text-align: center;
       padding: 0.3em 0.4em;
       font-weight: 600 !important;
+      text-transform: none !important;
+      white-space: nowrap;
     }
 
     p.location {

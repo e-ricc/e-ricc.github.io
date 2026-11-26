@@ -1,0 +1,30 @@
+{% comment %}
+  Formats a CV date range with month and year, e.g. "Oct 2024 – Jun 2025".
+  Params: start, end (YYYY, YYYY-MM or YYYY-MM-DD). An empty end or "Present"
+  renders as "Present". If start and end format the same, only one is shown.
+  Usage: {% capture date %}{% include cv/date_range.liquid start=s end=e %}{% endcapture %}
+{% endcomment %}
+{%- assign s = include.start | strip -%}
+{%- assign e = include.end | strip -%}
+{%- if s.size == 7 -%}
+  {%- assign s_fmt = s | append: '-01' | date: '%b %Y' -%}
+{%- elsif s.size >= 10 -%}
+  {%- assign s_fmt = s | date: '%b %Y' -%}
+{%- else -%}
+  {%- assign s_fmt = s -%}
+{%- endif -%}
+{%- assign e_low = e | downcase -%}
+{%- if e == '' or e_low == 'present' -%}
+  {%- assign e_fmt = 'Present' -%}
+{%- elsif e.size == 7 -%}
+  {%- assign e_fmt = e | append: '-01' | date: '%b %Y' -%}
+{%- elsif e.size >= 10 -%}
+  {%- assign e_fmt = e | date: '%b %Y' -%}
+{%- else -%}
+  {%- assign e_fmt = e -%}
+{%- endif -%}
+{%- if s_fmt == e_fmt -%}
+  {{- s_fmt -}}
+{%- else -%}
+  {{- s_fmt }} – {{ e_fmt -}}
+{%- endif -%}
